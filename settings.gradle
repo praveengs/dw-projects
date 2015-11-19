@@ -2,4 +2,4 @@ rootProject.name = 'dw-projects'
 
 
 include 'dw-sample-1'
-
+include 'dw-sample-1-package'

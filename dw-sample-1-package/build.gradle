@@ -1,0 +1,9 @@
+apply plugin: 'application'
+
+mainClassName = "com.pgs.dwsamples.one.app.SampleApplication"
+
+
+dependencies {
+    compile project(':dw-sample-1')
+
+}

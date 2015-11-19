@@ -1,8 +1,17 @@
 group 'com.pgs.dw'
 version '1.0-SNAPSHOT'
 
+def javaProjects() {
+    subprojects.findAll { new File(it.projectDir, 'src').directory }
+}
 
 subprojects {
+    repositories {
+        mavenCentral()
+    }
+}
+
+configure(javaProjects()) {
     apply plugin: 'java'
 
     sourceCompatibility = 1.8
