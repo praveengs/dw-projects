@@ -1,0 +1,14 @@
+group 'com.pgs.dw'
+version '1.0-SNAPSHOT'
+
+
+subprojects {
+    apply plugin: 'java'
+
+    sourceCompatibility = 1.8
+
+    repositories {
+        mavenCentral()
+    }
+
+}

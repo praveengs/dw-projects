@@ -1,0 +1,14 @@
+task runApp(type: JavaExec) {
+    classpath = sourceSets.main.runtimeClasspath
+
+    main = 'com.pgs.dwsamples.one.app.SampleApplication'
+
+    // arguments to pass to the application
+    args 'server'
+    args 'E:\\praveen\\development\\IJProjects\\DW\\dw-projects\\dw-sample-1\\src\\main\\resources\\service.yml'
+}
+
+dependencies {
+    compile 'io.dropwizard:dropwizard-core:0.9.1'
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}
